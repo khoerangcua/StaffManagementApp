@@ -29,21 +29,37 @@
            android:orientation="vertical"
            android:backgroundTint="@color/normal_textcolor">
            <TextView
-               android:text="@string/chucvu_textview"
-               android:layout_width="match_parent"
-               android:layout_height="30dp"/>
-           <TextView
                android:text="@string/ten_textview"
                android:layout_width="match_parent"
-               android:layout_height="30dp"/>
+               android:fontFamily="@font/comfortaa_regular"
+               android:layout_height="30dp"
+               android:textSize="14sp"
+               android:gravity="center_vertical"
+               android:textColor="@color/button_backgroundcolor"/>
+           <TextView
+               android:text="@string/chucvu_textview"
+               android:layout_width="match_parent"
+               android:fontFamily="@font/comfortaa_regular"
+               android:layout_height="30dp"
+               android:textSize="14sp"
+               android:gravity="center_vertical"
+               android:textColor="@color/button_backgroundcolor"/>
            <TextView
                android:text="@string/chuthich1_textview"
                android:layout_width="match_parent"
-               android:layout_height="30dp"/>
+               android:layout_height="30dp"
+               android:fontFamily="@font/comfortaa_regular"
+               android:textSize="14sp"
+               android:gravity="center_vertical"
+               android:textColor="@color/button_backgroundcolor"/>
            <TextView
                android:text="@string/chuthich2_textview"
                android:layout_width="match_parent"
-               android:layout_height="30dp"/>
+               android:layout_height="30dp"
+               android:textSize="14sp"
+               android:fontFamily="@font/comfortaa_regular"
+               android:gravity="center_vertical"
+               android:textColor="@color/button_backgroundcolor"/>
        </LinearLayout>
 
     </LinearLayout>
@@ -61,24 +77,29 @@
         android:layout_height="104dp"
         android:textAlignment="center"
         android:gravity="center"
-        android:textSize="20sp"
+        android:textSize="25sp"
+        android:fontFamily="@font/comfortaa_regular"
         android:textColor="@color/button_backgroundcolor"
         android:text="@string/trangchu_tittle" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/diemdanhbutton"
         android:layout_width="380dp"
-        android:layout_height="180dp"
+        android:layout_height="160dp"
         android:layout_gravity="center"
+        android:drawableLeft="@drawable/diemdanh"
+        android:fontFamily="@font/comfortaa_regular"
         android:backgroundTint="@color/button_backgroundcolor"
         android:text="@string/điemanh_button" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="380dp"
-        android:layout_height="180dp"
+        android:layout_height="160dp"
         android:layout_gravity="center"
         android:backgroundTint="@color/button_backgroundcolor"
+        android:drawableLeft="@drawable/table"
+        android:fontFamily="@font/comfortaa_regular"
         android:text="@string/quanlycaiban_button" />
 
 </LinearLayout>

@@ -30,13 +30,16 @@
         android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/accountInForButton"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:src="@drawable/img"
+        android:backgroundTint="@color/button_backgroundcolor"
+        />
 
     <Button
         android:id="@+id/accountPassButton"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
+        android:fontFamily="@font/comfortaa_regular"
         android:layout_marginTop="2dp"
         android:backgroundTint="@color/button_backgroundcolor"
         android:text="@string/pass_button"
@@ -48,6 +51,7 @@
         android:layout_width="160dp"
         android:layout_height="45dp"
         android:layout_marginStart="44dp"
+        android:fontFamily="@font/comfortaa_regular"
         android:layout_marginTop="2dp"
         android:backgroundTint="@color/button_backgroundcolor"
         android:text="@string/infor_button"

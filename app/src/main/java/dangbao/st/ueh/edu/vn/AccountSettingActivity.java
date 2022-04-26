@@ -36,6 +36,7 @@ public class AccountSettingActivity extends AppCompatActivity {
                 loadFragment(accountPass);
             }
         });
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
     }
 

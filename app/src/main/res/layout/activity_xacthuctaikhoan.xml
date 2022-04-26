@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/appbackground"
-    tools:context=".MainActivity">
+    tools:context=".XacThucTaiKhoanActivity">
 
 
     <ImageButton
@@ -16,19 +16,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:src="@drawable/img"
+       />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/tenDangNhapEditText"
         android:layout_width="380dp"
         android:layout_height="60dp"
         android:layout_marginTop="44dp"
         android:background="@drawable/textfield_style"
         android:ems="10"
+        android:textSize="14sp"
         android:inputType="textPersonName"
+        android:fontFamily="@font/comfortaa_regular"
         android:text="@string/name_account"
         app:layout_constraintEnd_toEndOf="parent"
-        android:textColor="@color/button_backgroundcolor"
+        android:textColor="@color/text_inTextField"
         app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -40,8 +43,10 @@
         android:layout_marginStart="16dp"
         android:layout_marginBottom="8dp"
         android:text="@string/name_lable_account"
+        android:fontFamily="@font/comfortaa_regular"
+        android:textSize="14sp"
         android:textColor="@color/button_backgroundcolor"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/tenDangNhapEditText"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -50,27 +55,31 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="8dp"
+        android:textSize="14sp"
         android:textColor="@color/button_backgroundcolor"
         android:text="@string/password_lable_account"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+        android:fontFamily="@font/comfortaa_regular"
+        app:layout_constraintBottom_toTopOf="@+id/matKhauEditText"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/matKhauEditText"
         android:layout_width="380dp"
         android:layout_height="60dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="40dp"
         android:background="@drawable/textfield_style"
-        android:textColor="@color/button_backgroundcolor"
+        android:textColor="@color/text_inTextField"
+        android:textSize="14sp"
+        android:fontFamily="@font/comfortaa_regular"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/password_account"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/tenDangNhapEditText" />
 
     <Button
-        android:id="@+id/dangnhapbutton"
+        android:id="@+id/dangNhapButton"
         android:layout_width="380dp"
         android:layout_height="60dp"
         android:layout_marginTop="16dp"
@@ -80,38 +89,44 @@
         app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         android:textColor="@color/white"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        android:fontFamily="@font/comfortaa_regular"
+        app:layout_constraintTop_toBottomOf="@+id/matKhauEditText" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:textColor="@color/button_backgroundcolor"
+        android:layout_marginStart="288dp"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"
         android:text="@string/quenmatkhau_textview"
+        android:fontFamily="@font/comfortaa_regular"
+        android:textColor="@color/button_backgroundcolor"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dangnhapbutton" />
+        app:layout_constraintTop_toBottomOf="@+id/dangNhapButton" />
 
     <TextView
         android:id="@+id/textView5"
+        android:fontFamily="@font/comfortaa_regular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="324dp"
         android:layout_marginTop="12dp"
         android:text="@string/chinhsach_textview"
         android:textColor="@color/button_backgroundcolor"
         app:layout_constraintStart_toStartOf="parent"
+        android:textSize="14sp"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
+        android:fontFamily="@font/comfortaa_regular"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/app_name"
         android:textColor="@color/button_backgroundcolor"
-        android:textSize="20sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton" />
