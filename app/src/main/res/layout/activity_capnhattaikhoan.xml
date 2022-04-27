@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/appbackground"
     android:orientation="vertical"
-    tools:context=".AccountSettingActivity">
+    tools:context=".CapNhatTaiKhoanActivity">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -18,7 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/circularImageView"
+        app:layout_constraintTop_toBottomOf="@+id/anhDaiDienCircularImageView2"
         app:layout_constraintVertical_bias="0.0">
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -29,13 +29,13 @@
         android:layout_marginTop="2dp"
         android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/accountInForButton"
+        app:layout_constraintTop_toBottomOf="@+id/thongTinNguoiDungButton"
         android:src="@drawable/img"
         android:backgroundTint="@color/button_backgroundcolor"
         />
 
     <Button
-        android:id="@+id/accountPassButton"
+        android:id="@+id/matKhauTaiKhoanButton"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
@@ -43,11 +43,11 @@
         android:layout_marginTop="2dp"
         android:backgroundTint="@color/button_backgroundcolor"
         android:text="@string/pass_button"
-        app:layout_constraintStart_toEndOf="@+id/accountInForButton"
+        app:layout_constraintStart_toEndOf="@+id/thongTinNguoiDungButton"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/accountInForButton"
+        android:id="@+id/thongTinNguoiDungButton"
         android:layout_width="160dp"
         android:layout_height="45dp"
         android:layout_marginStart="44dp"
@@ -59,11 +59,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.mikhaellopez.circularimageview.CircularImageView
-        android:id="@+id/circularImageView"
+        android:id="@+id/anhDaiDienCircularImageView2"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="148dp"
-        android:src="@drawable/userimage"
         app:civ_border_color="@color/button_backgroundcolor"
         app:civ_border_width="1dp"
         app:civ_shadow="true"

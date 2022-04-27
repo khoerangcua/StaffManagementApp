@@ -29,7 +29,7 @@ public class XacThucTaiKhoanActivity extends AppCompatActivity {
     DatabaseReference root;
     DatabaseReference taiKhoan_Tbl;
     ArrayList<TaiKhoan> taiKhoans;
-    TaiKhoan taiKhoanHienTai;
+    String idTaiKhoanHienTai;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -136,7 +136,7 @@ public class XacThucTaiKhoanActivity extends AppCompatActivity {
             TaiKhoan taiKhoan = taiKhoans.get(i);
             if (taiKhoan.getTenDangNhap().compareTo(tenDangNhap) == 0  && taiKhoan.getMatKhau().compareTo(matKhau) == 0 ) {
                 xacThucThanhCong = true;
-                taiKhoanHienTai = taiKhoan;
+                idTaiKhoanHienTai = taiKhoan.getIdTaiKhoan();
                 break;
             }
         }
@@ -157,8 +157,10 @@ public class XacThucTaiKhoanActivity extends AppCompatActivity {
     
     private void DangNhapThanhCong(){
         Toast.makeText(this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
-        Log.d("TaiKhoanHienTai",taiKhoanHienTai.toString());
-        // To Do
-        
+        Log.d("TaiKhoanHienTai",idTaiKhoanHienTai);
+        // Tạo mới một intent, lưu giá trị id tài khoản hiện tại và chuyển qua TrangChuActivity
+        Intent hienThiTrangChuActivityIntent = new Intent(getApplicationContext(), TrangChuActivity.class);
+        hienThiTrangChuActivityIntent.putExtra("idTaiKhoanHienTai", this.idTaiKhoanHienTai);
+        startActivity(hienThiTrangChuActivityIntent);
     }
 }

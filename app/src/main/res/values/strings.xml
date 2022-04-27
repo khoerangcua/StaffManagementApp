@@ -10,10 +10,6 @@
     <string name="trangchu_tittle">Trang chủ</string>
     <string name="điemanh_button">Điểm danh</string>
     <string name="quanlycaiban_button">Quản lý cái bàn</string>
-    <string name="chucvu_textview">Phục vụ</string>
-    <string name="ten_textview">Đặng Ngọc Quốc Bảo</string>
-    <string name="chuthich1_textview">chú thích 1</string>
-    <string name="chuthich2_textview">Chú thích 2</string>
     <string name="infor_button">Infor</string>
     <string name="pass_button">Password</string>
     <!-- TODO: Remove or change this placeholder text -->
@@ -23,6 +19,6 @@
     <string name="diachi_label">Địa chỉ</string>
     <string name="cappnhatButton">Cập nhật</string>
     <string name="matkhaucu_label">Mật khẩu cũ</string>
-    <string name="nhaplaimatkhaucu_label">Nhập lại mật khẩu cũ</string>
     <string name="matkhaumoi_label">Mật khẩu mới</string>
+    <string name="nhaplaimatkhaumoi_label">Nhập lại mật khẩu mới</string>
 </resources>
